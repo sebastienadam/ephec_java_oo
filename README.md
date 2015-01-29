@@ -1,2 +1,3 @@
-# ephec_java_oo
-Exercices réalisé lors du cours de Java OO en 2014-2015
+# Programmation orientée objet Java
+
+Exercices réalisé lors du cours de "Programmation orientée objet Java" - EPHEC 2014-2015
