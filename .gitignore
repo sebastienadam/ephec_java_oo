@@ -11,3 +11,9 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /build/
+/E001_SorterFX/nbproject/private/
+/E001_SorterFX/dist/
+/E001_SorterFX/build/
+/JavaFXApplication2/nbproject/private/
+/JavaFXApplication2/dist/
+/JavaFXApplication2/build/
