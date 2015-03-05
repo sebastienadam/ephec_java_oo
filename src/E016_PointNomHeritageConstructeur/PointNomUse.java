@@ -16,5 +16,4 @@ public class PointNomUse {
     PointNom pn = new PointNom(4, 6, 'x');
     pn.affCoordNom();
   }
-  
 }
