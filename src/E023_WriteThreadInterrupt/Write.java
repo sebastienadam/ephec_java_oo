@@ -18,6 +18,11 @@ public class Write extends Thread {
         break;
       } else {
         System.out.println(message);
+        try {
+          sleep(Math.round(Math.random() * 100));
+        } catch (InterruptedException ex) {
+          break;
+        }
       }
     }
   }
