@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/E024_NumberThreadSynchronized/ThrAff.java</file>
-            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/E024_NumberThreadSynchronized/ThrCalc.java</file>
-            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/E024_NumberThreadSynchronized/NumberUse.java</file>
-            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/E024_NumberThreadSynchronized/Number.java</file>
+            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/test/JeuDeCartesTest/CarteTest.java</file>
+            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/JeuDeCartes/Paquet.java</file>
+            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/JeuDeCartes/Carte.java</file>
+            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/JeuDeCartes/Valeur.java</file>
+            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/src/JeuDeCartes/Couleur.java</file>
+            <file>file:/C:/Users/Sébastien/Documents/Enseignement/EPHEC/I170%20-%20Programmation%20orientée%20objet%20JAVA/Exercices/test/JeuDeCartesTest/PaquetTest.java</file>
         </group>
     </open-files>
 </project-private>
