@@ -6,13 +6,13 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import JeuDeCartes.Paquet;
+import JeuDeCartes.Packet;
 
-public class PaquetTest {
-  private Paquet paquet;
+public class PacketTest {
+  private Packet packet;
   
   
-  public PaquetTest() {
+  public PacketTest() {
   }
   
   @BeforeClass
@@ -25,7 +25,7 @@ public class PaquetTest {
   
   @Before
   public void setUp() {
-    paquet = new Paquet();
+    packet = new Packet();
   }
   
   @After
@@ -33,17 +33,17 @@ public class PaquetTest {
   }
 
   @Test
-  public void taillePlein() {
-    assertEquals(52, paquet.size());
+  public void sizeFull() {
+    assertEquals(52, packet.size());
   }
   @Test
-  public void vider() {
+  public void empty() {
     int nb = 0;
-    while (!paquet.isEmpty()) {      
-      paquet.pecher();
+    while (!packet.isEmpty()) {      
+      packet.take();
       nb++;
     }
-    assertEquals(0, paquet.size());
+    assertEquals(0, packet.size());
     assertEquals(52, nb);
   }
 }

@@ -2,14 +2,14 @@ package JeuDeCartes;
 
 import java.util.ArrayList;
 
-public class Paquet {
-  private final ArrayList<Carte> paquet;
+public class Packet {
+  private final ArrayList<Card> packet;
   
-  public Paquet() {
-    paquet = new ArrayList<>();
-    for (Valeur val : Valeur.values()) {
-      for (Couleur coul : Couleur.values()) {
-        paquet.add(new Carte(val, coul));
+  public Packet() {
+    packet = new ArrayList<>();
+    for (Value val : Value.values()) {
+      for (Color col : Color.values()) {
+        packet.add(new Card(val, col));
       }
     }
   }
@@ -20,7 +20,7 @@ public class Paquet {
    * @return Le nombre de cartes restant dans le paquet.
    */
   public int size() {
-    return paquet.size();
+    return packet.size();
   }
   
   /**
@@ -29,7 +29,7 @@ public class Paquet {
    * @return 'true' si le paquet est vide, 'false' sinon.
    */
   public boolean isEmpty() {
-    return paquet.isEmpty();
+    return packet.isEmpty();
   }
   
   /**
@@ -37,7 +37,7 @@ public class Paquet {
    * 
    * @return Une carte aléatoire du paquet.
    */
-  public Carte pecher() {
-    return paquet.remove((int)Math.floor(Math.random()*paquet.size()));
+  public Card take() {
+    return packet.remove((int)Math.floor(Math.random()*packet.size()));
   }
 }

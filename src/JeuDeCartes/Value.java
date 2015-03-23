@@ -1,6 +1,6 @@
 package JeuDeCartes;
 
-public enum Valeur {
+public enum Value {
   Deux,
   Trois,
   Quatre,

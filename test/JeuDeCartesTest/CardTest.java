@@ -6,14 +6,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import JeuDeCartes.Carte;
-import JeuDeCartes.Couleur;
-import JeuDeCartes.Valeur;
+import JeuDeCartes.Card;
+import JeuDeCartes.Color;
+import JeuDeCartes.Value;
 
-public class CarteTest {
-  private Carte carte;
+public class CardTest {
+  private Card card;
   
-  public CarteTest() {
+  public CardTest() {
   }
   
   @BeforeClass
@@ -26,7 +26,7 @@ public class CarteTest {
   
   @Before
   public void setUp() {
-    carte = new Carte(Valeur.Valet, Couleur.Coeur);
+    card = new Card(Value.Valet, Color.Coeur);
   }
   
   @After
@@ -35,21 +35,21 @@ public class CarteTest {
 
   @Test
   public void CompareCarteWithEqual() {
-    assertEquals(0,carte.compare(new Carte(Valeur.Valet, Couleur.Pique)));
+    assertEquals(0,card.compare(new Card(Value.Valet, Color.Pique)));
   }
 
   @Test
   public void CompareCarteWithLess() {
-    assertEquals(1,carte.compare(new Carte(Valeur.Dix, Couleur.Pique)));
+    assertEquals(1,card.compare(new Card(Value.Dix, Color.Pique)));
   }
 
   @Test
   public void CompareCarteWithMore() {
-    assertEquals(-1,carte.compare(new Carte(Valeur.Dame, Couleur.Pique)));
+    assertEquals(-1,card.compare(new Card(Value.Dame, Color.Pique)));
   }
   
   @Test
   public void ToString() {
-    assertTrue(carte.toString().equals("Valet de Coeur"));
+    assertTrue(card.toString().equals("Valet de Coeur"));
   }
 }

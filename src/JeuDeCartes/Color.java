@@ -1,6 +1,6 @@
 package JeuDeCartes;
 
-public enum Couleur {
+public enum Color {
   Coeur,
   Carreau,
   Trefle,

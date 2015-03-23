@@ -1,12 +1,12 @@
 package JeuDeCartes;
 
-public class Carte {
-  private Valeur valeur;
-  private Couleur couleur;
+public class Card {
+  private Value value;
+  private Color color;
   
-  public Carte(Valeur valeur, Couleur couleur) {
-    this.valeur = valeur;
-    this.couleur = couleur;
+  public Card(Value value, Color color) {
+    this.value = value;
+    this.color = color;
   }
   
   /**
@@ -17,12 +17,12 @@ public class Carte {
    *   cartes ont la même valeur et 1 si 'carte' est inférieure à l'objet en
    *   cours
    */
-  public int compare(Carte carte) {
-    return valeur.compareTo(carte.valeur);
+  public int compare(Card carte) {
+    return value.compareTo(carte.value);
   }
 
   @Override
   public String toString() {
-    return String.format("%s de %s", valeur, couleur);
+    return String.format("%s de %s", value, color);
   }
 }
