@@ -15,7 +15,7 @@ public class Player {
     return heap.size();
   }
   
-  public void clearHeap() {
+  void clearHeap() {
     heap.clear();
   }
 
@@ -23,15 +23,20 @@ public class Player {
     return name;
   }
   
-  public Card giveCard() {
+  Card giveCard() {
     return heap.remove();
   }
 
-  public boolean hasMoreCards() {
+  public boolean hasCards() {
     return !heap.isEmpty();
   }
   
-  public void recieveCard(Card card) {
+  void recieveCard(Card card) {
     heap.add(card);
+  }
+
+  @Override
+  public String toString() {
+    return String.format("%s (%d)", name, heap.size());
   }
 }
