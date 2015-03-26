@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class Table {
 
-  private HashMap<Player, ArrayList<Card>> givenCards;
+  private final HashMap<Player, ArrayList<Card>> givenCards;
   private Player winner;
 
   public Table() {
