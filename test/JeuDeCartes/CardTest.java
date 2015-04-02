@@ -6,9 +6,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import JeuDeCartes.Card;
-import JeuDeCartes.Color;
-import JeuDeCartes.Value;
 
 public class CardTest {
   private Card card;

@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
  */
 public class Heap {
   private final ArrayDeque<Card> heap;
-  
+
   public Heap() {
     heap = new ArrayDeque<>();
   }
