@@ -104,7 +104,7 @@ public class Game {
 
   public void removePlayer(String name) {
     if (runningGame) {
-      throw new IllegalStateException("De nouveaux joueurs ne peuvent pas être ajoutés en cours de partie");
+      throw new IllegalStateException("Un joueur ne peut pas être retiré en cours de partie");
     } else {
       for (Player player : players) {
         if (player.getName().equals(name)) {
@@ -117,7 +117,7 @@ public class Game {
 
   public void removePlayer(Player player) {
     if (runningGame) {
-      throw new IllegalStateException("De nouveaux joueurs ne peuvent pas être ajoutés en cours de partie");
+      throw new IllegalStateException("Un joueur ne peut pas être retiré en cours de partie");
     } else {
       players.remove(player);
     }

@@ -3,7 +3,6 @@ package E027_JeuBataille;
 import JeuBataille.Game;
 import JeuBataille.Player;
 import JeuBataille.Table;
-import JeuDeCartes.Card;
 import java.util.ArrayList;
 
 public class JeuBatailleUse {
