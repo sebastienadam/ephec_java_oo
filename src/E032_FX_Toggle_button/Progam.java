@@ -20,24 +20,24 @@ public class Progam extends Application {
   public void start(Stage primaryStage) {
     Button btnSend = new Button();
     Label lblMain = new Label("Sexe :");
-    VBox root = new VBox();
-    HBox tbBoxGender = new HBox();
+    VBox root = new VBox(20);
+    HBox tbBoxGender = new HBox(20);
     ToggleButton tbGenderFemale = new ToggleButton("F");
     ToggleButton tbGenderMale = new ToggleButton("H");
     ToggleGroup tbGroupGender = new ToggleGroup();
 
     lblMain.setFont(new Font("DejaVu Sans", 16));
 
-    tbBoxGender.setPadding(new Insets(20));
     tbBoxGender.setAlignment(Pos.CENTER);
+    tbBoxGender.getChildren().addAll(tbGenderMale,tbGenderFemale);
+
     tbGenderMale.setFont(new Font("DejaVu Sans", 16));
     tbGenderMale.setPrefWidth(64);
     tbGenderMale.setToggleGroup(tbGroupGender);
-    tbBoxGender.getChildren().add(tbGenderMale);
+
     tbGenderFemale.setFont(new Font("DejaVu Sans", 16));
     tbGenderFemale.setPrefWidth(64);
     tbGenderFemale.setToggleGroup(tbGroupGender);
-    tbBoxGender.getChildren().add(tbGenderFemale);
 
     btnSend.setFont(new Font("DejaVu Sans", 16));
     btnSend.setPrefWidth(128);
@@ -52,11 +52,10 @@ public class Progam extends Application {
     });
 
     root.setAlignment(Pos.CENTER);
-    root.getChildren().add(lblMain);
-    root.getChildren().add(tbBoxGender);
-    root.getChildren().add(btnSend);
+    root.setPadding(new Insets(20));
+    root.getChildren().addAll(lblMain,tbBoxGender,btnSend);
 
-    Scene scene = new Scene(root, 176, 176);
+    Scene scene = new Scene(root);
 
     primaryStage.setTitle("Choise your sex");
     primaryStage.setScene(scene);
